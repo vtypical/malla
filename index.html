@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Malla Curricular Interactiva</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Malla Curricular</h1>
+  <div class="semestre"><h2>Semestre I</h2>
+    <div class="ramo" data-id="mate1" data-prerq="">Matemáticas I</div>
+    <div class="ramo" data-id="diversidad" data-prerq="">Diversidad Biológica</div>
+    <div class="ramo" data-id="quimica" data-prerq="">Química</div>
+    <div class="ramo" data-id="geo" data-prerq="">Geomorfología y Paisaje</div>
+    <div class="ramo" data-id="clinica0" data-prerq="">Clínica 0</div>
+    <div class="ramo" data-id="comunicacion" data-prerq="">Taller Comunicación</div>
+  </div>
+  <div class="semestre"><h2>Semestre II</h2>
+    <div class="ramo" data-id="mate2" data-prerq="mate1">Matemáticas II</div>
+    <div class="ramo" data-id="fisica" data-prerq="mate1">Física</div>
+    <div class="ramo" data-id="biogeoquimica" data-prerq="quimica">Biogeoquímica</div>
+    <div class="ramo" data-id="ecofisiologia" data-prerq="">Ecofisiología</div>
+    <div class="ramo" data-id="medio_social" data-prerq="">Comprensión Medio Social</div>
+    <div class="ramo" data-id="clinica1a" data-prerq="clinica0">Clínica 1A</div>
+    <div class="ramo" data-id="libre2" data-prerq="">Libre</div>
+  </div>
+  <div class="semestre"><h2>Semestre III</h2>
+    <div class="ramo" data-id="mate3" data-prerq="mate2">Matemáticas III</div>
+    <div class="ramo" data-id="ecologia" data-prerq="diversidad">Ecología</div>
+    <div class="ramo" data-id="estad1" data-prerq="mate2">Estadística I</div>
+    <div class="ramo" data-id="info_amb" data-prerq="">Informática Ambiental</div>
+    <div class="ramo" data-id="sistema_cultural" data-prerq="medio_social">Comprensión del Sistema Cultural</div>
+    <div class="ramo" data-id="clinica1b" data-prerq="clinica1a,geo">Clínica 1B</div>
+    <div class="ramo" data-id="ingles1" data-prerq="">Inglés I</div>
+  </div>
+  <div class="semestre"><h2>Semestre IV</h2>
+    <div class="ramo" data-id="eco_desarrollo" data-prerq="">Economía y Desarrollo Territorial</div>
+    <div class="ramo" data-id="fisica_aplicada" data-prerq="fisica">Física Aplicada</div>
+    <div class="ramo" data-id="estad2" data-prerq="estad1">Estadística II</div>
+    <div class="ramo" data-id="geoinformatica" data-prerq="info_amb">Geoinformática</div>
+    <div class="ramo" data-id="edafologia" data-prerq="fisica">Edafología</div>
+    <div class="ramo" data-id="clinica1c" data-prerq="clinica1b">Clínica 1C</div>
+    <div class="ramo" data-id="ingles2" data-prerq="ingles1">Inglés II</div>
+  </div>
+  <div class="semestre"><h2>Semestre V</h2>
+    <div class="ramo" data-id="percepcion_remota" data-prerq="estad2,fisica_aplicada">Percepción Remota</div>
+    <div class="ramo" data-id="modelacion" data-prerq="fisica_aplicada,geoinformatica">Modelación Ambiental</div>
+    <div class="ramo" data-id="quimica_ambiental" data-prerq="quimica">Química Ambiental</div>
+    <div class="ramo" data-id="medio_ambiente" data-prerq="ecologia">Comprensión del Medio Ambiente</div>
+    <div class="ramo" data-id="clinica1d" data-prerq="clinica1c">Clínica 1D</div>
+    <div class="ramo" data-id="eco_politica" data-prerq="eco_desarrollo">Economía Política</div>
+    <div class="ramo" data-id="ingles3" data-prerq="ingles2">Inglés III</div>
+  </div>
+  <div class="semestre"><h2>Semestre VI</h2>
+    <div class="ramo" data-id="legislacion" data-prerq="">Políticas y Legislación Ambiental</div>
+    <div class="ramo" data-id="cambio_global" data-prerq="medio_ambiente">Cambio Global</div>
+    <div class="ramo" data-id="socioecologicos" data-prerq="medio_ambiente">Sistemas Socioecológicos</div>
+    <div class="ramo" data-id="clinica2a" data-prerq="clinica1d">Clínica 2A</div>
+    <div class="ramo" data-id="gestion_agua" data-prerq="estad2">Gestión del Agua</div>
+    <div class="ramo" data-id="planificacion_ot" data-prerq="medio_ambiente">Planificación Estratégica y OT</div>
+    <div class="ramo" data-id="ingles4" data-prerq="ingles3">Inglés IV</div>
+  </div>
+  <div class="semestre"><h2>Semestre VII</h2>
+    <div class="ramo" data-id="energias" data-prerq="fisica_aplicada">Energías</div>
+    <div class="ramo" data-id="manejo_rnr" data-prerq="modelacion">Manejo de Recursos Naturales Renovables</div>
+    <div class="ramo" data-id="formulacion" data-prerq="eco_desarrollo">Formulación y Evaluación de Proyectos</div>
+    <div class="ramo" data-id="electivo1" data-prerq="">Electivo</div>
+    <div class="ramo" data-id="gestion_pp" data-prerq="legislacion">Gestión Pública y Privada</div>
+    <div class="ramo" data-id="clinica2b" data-prerq="clinica2a">Clínica 2B</div>
+  </div>
+  <div class="semestre"><h2>Semestre VIII</h2>
+    <div class="ramo" data-id="electivo2" data-prerq="">Electivos</div>
+  </div>
+  <div class="semestre"><h2>Semestre IX</h2>
+    <div class="ramo" data-id="titulacion1" data-prerq="mate1,mate2,mate3,diversidad,quimica,geo,clinica0,comunicacion,fisica,biogeoquimica,ecofisiologia,medio_social,clinica1a,libre2,ecologia,estad1,info_amb,sistema_cultural,clinica1b,ingles1,eco_desarrollo,fisica_aplicada,estad2,geoinformatica,edafologia,clinica1c,ingles2,percepcion_remota,modelacion,quimica_ambiental,medio_ambiente,clinica1d,eco_politica,ingles3,legislacion,cambio_global,socioecologicos,clinica2a,gestion_agua,planificacion_ot,ingles4,energias,manejo_rnr,formulacion,electivo1,gestion_pp,clinica2b,electivo2">Actividad de Titulación</div>
+    <div class="ramo" data-id="electivo3" data-prerq="mate1">Electivos Especializados</div>
+  </div>
+  <div class="semestre"><h2>Semestre X</h2>
+    <div class="ramo" data-id="titulacion2" data-prerq="titulacion1">Actividad de Titulación (Continuación)</div>
+    <div class="ramo" data-id="practica" data-prerq="titulacion1">Práctica Profesional</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
