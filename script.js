@@ -13,8 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
         ramo.classList.remove("aprobado");
       } else {
         ramo.classList.remove("bloqueado");
-        if (aprobado) ramo.classList.add("aprobado");
-        else ramo.classList.remove("aprobado");
+        if (aprobado) {
+          ramo.classList.add("aprobado");
+        } else {
+          ramo.classList.remove("aprobado");
+        }
       }
     });
   }
@@ -22,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   ramos.forEach(ramo => {
     ramo.addEventListener("click", () => {
       const id = ramo.dataset.id;
+      if (ramo.classList.contains("bloqueado")) return;
+
       estado[id] = !estado[id];
       localStorage.setItem("estadoRamos", JSON.stringify(estado));
       actualizarEstado();
