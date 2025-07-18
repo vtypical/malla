@@ -37,3 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   actualizarEstado();
 });
+document.getElementById("resetBtn").addEventListener("click", () => {
+  localStorage.removeItem("estadoRamos");
+  location.reload(); // recarga la página para reflejar el cambio
+});
