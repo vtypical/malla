@@ -54,7 +54,7 @@ h1 {
 .ramo.aprobado {
   background-color: #e1bee7; /* morado claro */
   text-decoration: line-through;
-  color: #4a148c; /* mismo tono morado oscuro para el texto */
+  color: #4a148c;
   border: 1px solid #ba68c8;
 }
 
